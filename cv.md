@@ -53,7 +53,7 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
 
 ### **Education:**
 
-- University: Ala-Too International University
+- University: Ala-Too International university
 - Courses: [Fullstackopen](https://fullstackopen.com/en/), several Udemy courses on JS and React
 
 ### **English:**
