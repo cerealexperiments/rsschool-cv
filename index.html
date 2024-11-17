@@ -1,114 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    >
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Emir Taalaibekov - Web Developer CV</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <div class="header__photo-box">
-          <img src="img/photo.jpg" alt="avatar" class="header__photo">
-        </div>
-        <div class="header__text-box">
-          <h1 class="header__text-box__name">Emir Taalaibekov</h1>
-          <h2 class="header__text-box__profession">Web Developer</h2>
-          <h3 class="header__text-box__about-me__heading">About me</h3>
-          <p class="header__text-box__about-me__text">
-            Hey, I am a web developer focused on frontend development. Currently
-            I am a computer science student planning to get a job once I get
-            good enough to work on production.
-          </p>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="header__main-content">
+          <div class="header__photo-box">
+            <img
+              src="img/photo.jpg"
+              alt="Emir Taalaibekov's photo"
+              class="header__photo" />
+          </div>
+          <div class="header__text-box">
+            <h1 class="header__text-box__name">Emir Taalaibekov</h1>
+            <h2 class="header__text-box__profession">Web Developer</h2>
+            <div id="about">
+              <h2 class="header__text-box__about-me__heading">About me</h2>
+              <p class="header__text-box__about-me__text">
+                Hey, I am a web developer focused on frontend development.
+                Currently I am a computer science student planning to get a job
+                once I get good enough to work on production. I do not want to
+                bother updating the text in this CV, it's 2 years old and
+                outdated.
+              </p>
+            </div>
+          </div>
         </div>
       </header>
 
       <main class="main">
         <div class="main-col main-col-1">
-          <section class="section-education">
-            <h3 class="section-education__heading">Education</h3>
-            <div class="section-education__block">
-              <p class="section-education__name">Computer Science</p>
-              <p class="section-education__place">
-                Ala-Too International University
-              </p>
-              <p class="section-education__period">2021-2025</p>
-            </div>
-            <div class="section-education__block">
-              <p class="section-education__name">Web Development</p>
-              <p class="section-education__place">Self Study</p>
-              <p class="section-education__period">2022-Cur.</p>
-            </div>
+          <section id="education" class="section-education">
+            <h2 class="section-education__heading">Education</h2>
+            <ul>
+              <li class="section-education__block">
+                <p class="section-education__name">Computer Science</p>
+                <p class="section-education__place">
+                  Ala-Too International University
+                </p>
+                <p class="section-education__period">2021-2025</p>
+              </li>
+              <li class="section-education__block">
+                <p class="section-education__name">Web Development</p>
+                <p class="section-education__place">Self Study</p>
+                <p class="section-education__period">2022-Cur.</p>
+              </li>
+            </ul>
           </section>
 
-          <section class="section-skills">
-            <h3 class="section-skills__heading">Tech Skills</h3>
-            <div class="section-skills__skills">
-              <p class="section-skills__skill">
+          <section id="skills" class="section-skills">
+            <h2 class="section-skills__heading">Tech Skills</h2>
+            <ul class="section-skills__skills">
+              <li class="section-skills__skill">
                 Languages: JavaScript, TypeScript, Python
-              </p>
-              <p class="section-skills__skill">
+              </li>
+              <li class="section-skills__skill">
                 Frameworks/libraries: TailwindCSS, React, Redux Toolkit, React
                 Query
-              </p>
-              <p class="section-skills__skill">
+              </li>
+              <li class="section-skills__skill">
                 Other: Git, PostgreSQL, Supabase
-              </p>
-            </div>
+              </li>
+              <li class="section-skills__skill">
+                English Proficiency: C1 (I'm nonchalant about it and it's not
+                really special but I had to put it somewhere because of
+                technical requirements...)
+              </li>
+            </ul>
+          </section>
+
+          <section class="section-code">
+            <h2>Code Example</h2>
+            <pre><code>
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+            </code></pre>
           </section>
         </div>
 
         <div class="main-col main-col-2">
-          <section class="section-experience">
-            <h3 class="section-experience__heading">Work Experience</h3>
+          <section id="experience" class="section-experience">
+            <h2 class="section-experience__heading">Projects</h2>
             <p class="section-experience__additional">
-              I haven't worked on a real job yet but I've built some pet
-              projects. Here are some of them:
+              Here are some of my projects with source code:
             </p>
-            <div class="section-experience__block">
-              <p class="section-experience__name">Swamp incident</p>
-              <p class="section-experience__period">December 2021</p>
-              <p class="section-experience__text">
-                Swamp Incident is a small platformer game made on Python with
-                the Pygame library. By building this game i learned a ton about
-                OOP in Python.
-              </p>
-            </div>
-            <div class="section-experience__block">
-              <p class="section-experience__name">Rest Countries</p>
-              <p class="section-experience__period">September 2022</p>
-              <p class="section-experience__text">
-                Rest Countries is a react app in which you can get basic info
-                about different countries. I built this project to get a grasp
-                on working with external APIs and displaying the fetched data in
-                the ui.
-              </p>
-            </div>
+            <ul>
+              <li class="section-experience__block">
+                <h3 class="section-experience__name">Swamp incident</h3>
+                <p class="section-experience__period">December 2021</p>
+                <p class="section-experience__text">
+                  Swamp Incident is a small platformer game made on Python with
+                  the Pygame library. By building this game i learned a ton
+                  about OOP in Python.
+                </p>
+                <a
+                  href="https://github.com/cerealexperiments/the-swamp-incident"
+                  >Source Code</a
+                >
+              </li>
+              <li class="section-experience__block">
+                <h3 class="section-experience__name">Rest Countries</h3>
+                <p class="section-experience__period">September 2022</p>
+                <p class="section-experience__text">
+                  Rest Countries is a react app in which you can get basic info
+                  about different countries. I built this project to get a grasp
+                  on working with external APIs and displaying the fetched data
+                  in the ui.
+                </p>
+                <a href="https://github.com/cerealexperiments/countries"
+                  >Source Code</a
+                >
+              </li>
+            </ul>
           </section>
         </div>
       </main>
 
-      <section class="section-contacts">
-        <div class="section-contacts__contact">
-          <img class="section-contacts__logo" src="img/email.svg" alt="email logo">
-          <p class="section-contacts__name">
-            Email: notemirtaalaibekov@gmail.com
-          </p>
-        </div>
-
-        <div class="section-contacts__contact">
-          <img class="section-contacts__logo" src="img/telegram.svg" alt="telegram logo">
-          <p class="section-contacts__name">Telegram: cerealexperiments</p>
-        </div>
+      <section id="contacts" class="section-contacts">
+        <h2>Contacts</h2>
+        <ul>
+          <li class="section-contacts__contact">
+            <img
+              class="section-contacts__logo"
+              src="img/email.svg"
+              alt="email icon" />
+            <a href="mailto:notemirtaalaibekov@gmail.com"
+              >notemirtaalaibekov@gmail.com</a
+            >
+          </li>
+          <li class="section-contacts__contact">
+            <img
+              class="section-contacts__logo"
+              src="img/telegram.svg"
+              alt="telegram icon" />
+            <a href="https://t.me/m1vglazer">@m1vglazer</a>
+          </li>
+        </ul>
       </section>
+
+      <footer>
+        <p>&copy; 2024</p>
+        <a href="https://github.com/cerealexperiments">My GitHub</a>
+        <a href="https://rs.school/js/">
+          <img
+            src="https://rs.school/_next/static/media/rss-logo.c19ce1b4.svg"
+            alt="RS School logo" />
+        </a>
+      </footer>
     </div>
   </body>
 </html>
