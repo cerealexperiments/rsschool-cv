@@ -23,7 +23,12 @@ body {
 
 .header {
   display: flex;
+  flex-direction: column;
   background-color: white;
+}
+
+.header__main-content {
+  display: flex;
 }
 
 .header__photo-box {
@@ -31,11 +36,13 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .header__photo {
   width: 80%;
   min-width: 25rem;
   object-fit: fill;
 }
+
 .header__text-box {
   width: 60%;
   display: flex;
@@ -43,9 +50,11 @@ body {
   justify-content: center;
   padding: 1.2rem;
 }
+
 .header__text-box__name {
   font-size: 3.6rem;
 }
+
 .header__text-box__profession {
   margin-top: 0.8rem;
   font-size: 2.4rem;
@@ -53,14 +62,41 @@ body {
   align-self: flex-start;
   padding: 0.4rem;
 }
+
 .header__text-box__about-me__heading {
   font-size: 2.4rem;
   text-transform: uppercase;
   margin-top: 3.6rem;
 }
+
 .header__text-box__about-me__text {
   margin-top: 0.8rem;
   font-size: 1.8rem;
+}
+
+nav {
+  background-color: #22222e;
+  padding: 1.6rem;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ffc905;
 }
 
 .main {
@@ -68,37 +104,44 @@ body {
   grid-template-columns: 1fr 1fr;
   color: white;
 }
+
 .main-col-1 {
   padding-top: 5.6rem;
   background-color: #292935;
   padding-left: 2.2rem;
   padding-right: 2.2rem;
 }
+
 .main-col-2 {
   padding-top: 5.6rem;
   background-color: #22222e;
   padding-left: 2.2rem;
   padding-right: 2.2rem;
 }
+
 .section-education__heading {
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 2.2rem;
   text-transform: uppercase;
 }
+
 .section-education__block {
   margin-bottom: 2.2rem;
 }
+
 .section-education__name {
   font-size: 1.8rem;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 1.2rem;
 }
+
 .section-education__place {
   font-size: 1.6rem;
   margin-bottom: 0.6rem;
 }
+
 .section-education__period {
   font-size: 1.4rem;
 }
@@ -109,18 +152,22 @@ body {
   margin-bottom: 2.2rem;
   text-transform: uppercase;
 }
+
 .section-experience__block {
   margin-bottom: 2.2rem;
 }
+
 .section-experience__additional {
   font-size: 1.6rem;
   margin-bottom: 2.2rem;
 }
+
 .section-experience__name {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 0.8rem;
 }
+
 .section-experience__period {
   padding: 0.2rem 0.4rem;
   background-color: #ffc905;
@@ -129,6 +176,7 @@ body {
   display: inline-block;
   margin-bottom: 0.8rem;
 }
+
 .section-experience__text {
   font-size: 1.6rem;
 }
@@ -137,44 +185,144 @@ body {
   margin-top: 5.6rem;
   margin-bottom: 4.8rem;
 }
+
 .section-skills__heading {
   font-size: 2.4rem;
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 2.2rem;
 }
+
+.section-skills__skills {
+  list-style: none;
+}
+
 .section-skills__skill {
   font-size: 1.6rem;
   margin-bottom: 1.2rem;
 }
 
+.section-code {
+  margin-top: 5.6rem;
+  margin-bottom: 4.8rem;
+}
+
+.section-code h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2.2rem;
+}
+
+.section-code pre {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  overflow-x: auto;
+}
+
 .section-contacts {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffc905;
   color: black;
   font-weight: 600;
-  gap: 2.4rem;
-  font-size: 1.6rem;
-  padding: 2.2rem 2.2rem;
+  padding: 2.2rem;
 }
+
+.section-contacts h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 2.2rem;
+}
+
+.section-contacts ul {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
 .section-contacts__contact {
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
 
+.section-contacts__logo {
+  width: 2.4rem;
+}
+
+.section-contacts a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.section-contacts a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #22222e;
+  color: white;
+  padding: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  font-size: 1.6rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffc905;
+}
+
+footer img {
+  height: 4rem;
+}
+
+.section-experience ul {
+  list-style: none;
+}
+
+.section-experience a {
+  color: #ffc905;
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: inline-block;
+  margin-top: 1.2rem;
+}
+
+.section-experience a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
-  .header {
+  .header__main-content {
     flex-direction: column;
     align-items: center;
   }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .main {
     grid-template-columns: 1fr;
   }
-  .section-contacts {
+
+  .section-contacts ul {
     flex-direction: column;
   }
+
   .section-experience {
     margin-bottom: 5.8rem;
   }
